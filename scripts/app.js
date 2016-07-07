@@ -4,14 +4,22 @@
 $('#basic-calc').click(clickButton);
 
 function clickButton(){
-  var numOne = $('numOne');
-  var numTwo = $('numTwo');
+  var $numOne = $('numOne');
+  var $numTwo = $('numTwo');
   if $('#basic-operation' > 'option value='+'') {
-    return var numOne + var numTwo;
+    var $addition = $('addition');
+    $addition = $numOne + $numTwo;
+    $('basic-answer-alert').print($addition);
   } else if $('#basic-operation' > 'option value='-'') {
-    return var numOne - var numTwo;
+    var $subtraction = $('subtraction');
+    Ssubtraction = $numOne - $numTwo;
+    $('basic-answer-alert').print($subtraction);
   } else if $('#basic-operation' > 'option value='*'') {
-    return var numOne * var numTwo;
+    var $multiplication = $('multiplication');
+    $multiplication = $numOne * $numTwo;
+    $('basic-answer-alert').print($multiplication);
   } else $('#basic-operation' > 'option value='/'') {
-    return var numOne / var numTwo;
+    var $division = $('division');
+    $division = $numOne / $numTwo;
+    $('basic-answer-alert').print($division);
   }
