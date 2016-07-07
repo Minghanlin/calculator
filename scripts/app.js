@@ -4,8 +4,8 @@
 $('#basic-calc').click(clickButton);
 
 function clickButton(){
-  var $numOne = $('numOne');
-  var $numTwo = $('numTwo');
+  var $numOne = $('basic-num-one').val();
+  var $numTwo = $('basic-num-two').val();
   if $('#basic-operation' > 'option value='+'') {
     var $addition = $('addition');
     $addition = $numOne + $numTwo;
